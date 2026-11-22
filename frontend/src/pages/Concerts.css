@@ -1,0 +1,134 @@
+.concerts-page {
+    min-height: 70vh;
+    background-color: #fffaf3;
+}
+
+.concerts-header {
+    padding: 75px 8% 55px;
+    text-align: center;
+}
+
+.concerts-header h1 {
+    margin: 12px 0;
+    color: #4b1729;
+    font-size: 42px;
+}
+
+.concerts-header > p:last-child {
+    color: #81736b;
+    font-size: 16px;
+}
+
+.concerts-list {
+    padding: 30px 8% 80px;
+}
+
+.concerts-list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.concerts-list-heading h2 {
+    color: #4b1729;
+    font-size: 26px;
+}
+
+.concerts-list-heading span {
+    color: #81736b;
+}
+
+@media (max-width: 600px) {
+    .concerts-header h1 {
+        font-size: 32px;
+    }
+
+    .concerts-list-heading {
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+.concerts-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 8px 10px 8px 18px;
+    background-color: #fffaf3;
+    border: 1px solid #f5ebdd;
+    border-radius: 12px;
+    color: #81736b;
+}
+
+.concerts-search input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #4b1729;
+    font-size: 15px;
+}
+
+.concerts-search input::placeholder {
+    color: #a99a90;
+}
+
+.no-concerts {
+    padding: 60px 20px;
+    text-align: center;
+    color: #81736b;
+}
+
+.no-concerts h3 {
+    color: #4b1729;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.festival-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.festival-filter label {
+    color: #4b1729;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.festival-filter select {
+    padding: 11px 15px;
+    border: 1px solid #f5ebdd;
+    border-radius: 10px;
+    background-color: #fffaf3;
+    color: #4b1729;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.festival-filter select:focus {
+    border-color: #4b1729;
+}
+
+@media (max-width: 600px) {
+    .festival-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .festival-filter select {
+        width: 100%;
+    }
+}

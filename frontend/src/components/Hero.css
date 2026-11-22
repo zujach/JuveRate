@@ -1,0 +1,91 @@
+.hero {
+    min-height: 560px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 70px 8%;
+    position: relative;
+    overflow: hidden;
+    background:
+            linear-gradient(
+                    90deg,
+                    rgba(35, 10, 20, 0.92) 0%,
+                    rgba(35, 10, 20, 0.72) 55%,
+                    rgba(35, 10, 20, 0.25) 100%
+            ),
+            url("https://juwenalia.krakow.pl/_next/image/?url=%2Fassets%2Fimages%2Fstrefa-plaza.webp&w=3840&q=75")
+            center / cover no-repeat;
+    color: #fffaf3;
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    color: #f2ae87;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.05;
+    font-weight: 800;
+    margin: 0 0 24px;
+    letter-spacing: -2px;
+}
+
+.hero-description {
+    max-width: 520px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f5ebdd;
+    margin-bottom: 32px;
+}
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 540px;
+    padding: 8px 8px 8px 18px;
+    background-color: #fffaf3;
+    border-radius: 10px;
+    color: #4b1729;
+}
+
+.hero-search input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #4b1729;
+    font-size: 14px;
+}
+
+.hero-search input::placeholder {
+    color: #9b8b82;
+}
+
+.hero-search button {
+    border: none;
+    border-radius: 7px;
+    padding: 13px 22px;
+    background-color: #4b1729;
+    color: #fffaf3;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero-search button:hover {
+    background-color: #713047;
+}
